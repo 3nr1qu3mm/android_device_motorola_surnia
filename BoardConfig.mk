@@ -20,7 +20,7 @@ include device/motorola/msm8916-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/motorola/surnia
 
-TARGET_KERNEL_CONFIG := cyanogenmod_surnia_defconfig
+TARGET_KERNEL_CONFIG := surnia_defconfig
 
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := XT1514,XT1521,XT1524,XT1526,XT1527,XT1523,surnia_uds,surnia_umts,surnia,surnia_udstv
@@ -28,7 +28,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_surnia
-TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
+TARGET_RECOVERY_DEVICE_MODULES := libinit_surnia
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432 #65536 * 512 mmcblk0p33
