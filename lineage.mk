@@ -13,11 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit from surnia device
-$(call inherit-product, device/motorola/surnia/device.mk)
-
-# Device identifier. This must come after all inclusions
-$(call inherit-product-if-exists, vendor/motorola/surnia/surnia-vendor.mk)
+$(call inherit-product, device/motorola/surnia/full_surnia.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 540
