@@ -46,7 +46,7 @@ void vendor_load_properties()
     std::string platform;
     std::string radio;
 
-    platform = property_get("ro.board.platform");
+    platform = property_get("ro.broken.device");
     if (platform != ANDROID_TARGET)
         return;
 
